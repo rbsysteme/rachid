@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RB-EMS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/glide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/css/glide.core.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3138c3d619.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <header>
+    <div class="header-logo">
+        <a href="/">RB-EMS</a>        
+    </div>
+       
+    </div>
+    <div>
+        <nav class="nav">
+            <ul class="nav-items">
+                <li class="nav-items"><a href="">Accueil</a></li>
+                <li class="nav-items"><a href="">Apropos</a></li>
+                <li class="nav-items"><a href="">Services</a></li>
+                <li class="nav-items"><a href="">Projets</a></li>
+                <li class="nav-items"><a href="">Prestations</a></li>
+                <li class="nav-items"><a href="">Contact</a></li>
+            </ul>
+                 <div class="nav-search">
+                    <div class="nav-search__el">
+                        <i class="fa-brands fa-searchengin"></i>
+                        <input type="text" placeholder="Recherche" class="search-input" />
+                    </div>
+                </div>
+        </nav>
+    </div>
+    
+    </header>
+    <section class="slider-container">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">0</li>
+                <li class="glide__slide">1</li>
+                <li class="glide__slide">2</li>
+              </ul>
+            </div>
+          </div>
+    </section>
+
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+        <script>
+        new Glide('.glide'), {
+            type:"carousel",
+            perView:5,
+            focusAt: 'center',
+            autoplay:3000,
+            arrows:{
+                prev:'glide__arrow--left',
+                next:'glide__arrow--right',
+            }
+        }.mount()
+        </script>
+</body>
+</html>
